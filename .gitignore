@@ -1,0 +1,20 @@
+# secrets — never commit
+.env
+
+# python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# runtime artifacts
+logs/
+data/
+evidence/
+
+# solc compiler cache (py-solc-x)
+.solcx/
+
+# editors
+.vscode/
+.idea/
