@@ -1,20 +1,37 @@
-# secrets — never commit
+# Environment variables / Secrets
 .env
+.env.*
+!.env.example
+secrets.json
+config.local.json
 
-# python
+# Python
 __pycache__/
 *.py[cod]
+*$py.class
 .venv/
 venv/
+env/
 
-# runtime artifacts
+# Hardware / IoT Runtime artifacts
 logs/
 data/
 evidence/
+temp/
+*.log
+*.sqlite
+*.db
 
-# solc compiler cache (py-solc-x)
+# C / C++
+*.o
+*.so
+*.out
+build/
+
+# Solc compiler cache
 .solcx/
 
-# editors
+# IDE / OS
 .vscode/
 .idea/
+.DS_Store
