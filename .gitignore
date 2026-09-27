@@ -1,0 +1,37 @@
+# Environment variables / Secrets
+.env
+.env.*
+!.env.example
+secrets.json
+config.local.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+
+# Hardware / IoT Runtime artifacts
+logs/
+data/
+evidence/
+temp/
+*.log
+*.sqlite
+*.db
+
+# C / C++
+*.o
+*.so
+*.out
+build/
+
+# Solc compiler cache
+.solcx/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
