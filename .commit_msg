@@ -1,0 +1,2 @@
+✨ feat(iot): create systemd service for autonomous execution of SIPARTA edge script
+🔒 security(iot): remove random voltage simulations to guarantee data integrity
