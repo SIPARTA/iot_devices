@@ -52,11 +52,16 @@ class SensorManager:
                     voltage = self.channels[sid].voltage
                 except Exception as e:
                     logger.error(f"Error reading {sid}: {e}")
-                    voltage = random.uniform(1.0, 3.5)
+                    voltage = 0.0
+                    self.statuses[sid] = "ERROR"
             else:
-                voltage = random.uniform(1.0, 3.5)
+                voltage = 0.0
+                self.statuses[sid] = "OFFLINE"
                 
             self.values[sid] = voltage
+            
+            if voltage == 0.0:
+                continue
             
             config = SENSOR_CONFIG.get(sid, {})
             warning_threshold = config.get("warning", 2.0)
