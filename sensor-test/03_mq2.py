@@ -77,7 +77,7 @@ def estimate_lpg_ppm(rs, ro):
 
 
     # --------------------------------------------------------
-    # Batasi ke rentang MQ-2 yang kita gunakan
+    # Batasi ke rentang operasi MQ-2
     # --------------------------------------------------------
 
     if ppm < 300:

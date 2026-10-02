@@ -47,7 +47,7 @@ def estimate_co_ppm(rs, r0):
     except (ValueError, OverflowError):
         return 0.0
 
-    # Batasi sesuai rentang yang sedang kita gunakan
+    # Batasi sesuai rentang operasi sensor
     if ppm < 1.0:
         ppm = 0.0
 
